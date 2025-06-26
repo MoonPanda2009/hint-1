@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Special Day - Main</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        // Loading screen logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const loader = document.getElementById('loader');
+            const mainContent = document.getElementById('main-content');
+            setTimeout(() => {
+                loader.style.display = 'none';
+                mainContent.style.display = 'block';
+            }, 2000); // 2 seconds loading screen
+        });
+    </script>
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="emoji-container">
+            <span class="emoji" role="img" aria-label="sleep">😴</span>
+            <span class="emoji" role="img" aria-label="keema noodles">🍜</span>
+            <span class="emoji" role="img" aria-label="sleep">😴</span>
+        </div>
+        <p>Loading something special...</p>
+    </div>
+    <div id="main-content" class="container" style="display:none;">
+        <header>
+            <h1>Welcome to a Calm Place</h1>
+        </header>
+        <section class="content">
+            <p class="big-text">Sometimes, the best moments are the quiet ones.</p>
+            <p class="big-text">Take your time, relax, and enjoy the little things.</p>
+            <div class="guitar surprise">
+                <img src="her.jpg" alt="Guitar strings" />
+                <p>Strum the strings of your dreams.</p>
+            </div>
+            <div class="noodles surprise">
+                <p>And maybe a warm bowl of your favorite keema noodles.</p>
+            </div>
+            <div class="gallery">
+                <img src="her again.jpg" alt="Photo 1" />
+                <img src="IMG_20250621_154914.jpg" alt="Photo 2" />
+                <img src="IMG_20250621_153010.jpg" alt="Photo 3" />
+            </div>
+            <audio autoplay loop>
+                <source src="audio-editor-output.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <footer>
+            <p>Blue skies and white clouds, just for you.</p>
+        </footer>
+    </div>
+</body>
+</html>
